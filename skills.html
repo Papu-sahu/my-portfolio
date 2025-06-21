@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills | Papu Sahu</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .skills-section {
+      margin-top: 4rem;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background-color: #2a2f3b;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 0 15px rgba(255,255,255,0.05);
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .skill-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .skill-header i {
+      font-size: 1.8rem;
+      color: var(--primary-color);
+    }
+
+    .skill-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+
+    .progress-bar {
+      height: 10px;
+      width: 100%;
+      background-color: #444;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 0.5rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background-color: var(--primary-color);
+      transition: width 1s ease-in-out;
+    }
+
+    .category-title {
+      color: var(--primary-color);
+      font-size: 1.5rem;
+      margin: 2rem 0 1rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="page-header">
+      <div class="logo"><a href="#">Developer</a></div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="mainicon"><div class="menu"><i class='bx bx-menu'></i></div></label>
+      <ul>
+        <li><a href="index.html" style="--navAni:1">Home</a></li>
+        <li><a href="about.html" style="--navAni:2">About</a></li>
+        <li><a href="#" class="active" style="--navAni:3">Skills</a></li>
+        <li><a href="portfolio.html" style="--navAni:4">Portfolio</a></li>
+        <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container skills-section">
+    <h1 class="category-title">Frontend Skills</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-header"><i class="fab fa-html5"></i><span class="skill-name">HTML</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 95%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-header"><i class="fab fa-css3-alt"></i><span class="skill-name">CSS</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-header"><i class="fab fa-js"></i><span class="skill-name">JavaScript</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-header"><i class="fab fa-react"></i><span class="skill-name">React (Learning)</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 60%;"></div></div>
+      </div>
+    </div>
+
+    <h1 class="category-title">Tools & Platforms</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-header"><i class="fab fa-git-alt"></i><span class="skill-name">Git & GitHub</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-header"><i class="fas fa-terminal"></i><span class="skill-name">Command Line</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 70%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-header"><i class="fas fa-pencil-ruler"></i><span class="skill-name">UI/UX Basics</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+      </div>
+    </div>
+
+    <h1 class="category-title">Currently Learning</h1>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-header"><i class="fas fa-code-branch"></i><span class="skill-name">APIs & JSON</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 50%;"></div></div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-header"><i class="fas fa-cubes"></i><span class="skill-name">Tailwind CSS</span></div>
+        <div class="progress-bar"><div class="progress-fill" style="width: 65%;"></div></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Papu Sahu</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4rem;
+      margin-top: 4rem;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .about-image {
+      flex: 1;
+      max-width: 400px;
+      animation: leftSideAni 1s ease forwards;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    }
+
+    .about-content {
+      flex: 2;
+      animation: rightSideAni 1s ease forwards;
+    }
+
+    .about-content h1 {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #ddd;
+      margin-bottom: 1rem;
+    }
+
+    .highlight {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .stats {
+      display: flex;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .stat-box {
+      background: #2a2f3b;
+      padding: 1.2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      text-align: center;
+      width: 150px;
+    }
+
+    .stat-box h2 {
+      color: #fff;
+      font-size: 2rem;
+      margin-bottom: .5rem;
+    }
+
+    .stat-box span {
+      color: var(--primary-color);
+      font-size: 1rem;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(50px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="page-header">
+      <div class="logo"><a href="#">Developer</a></div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="mainicon">
+        <div class="menu"><i class='bx bx-menu'></i></div>
+      </label>
+      <ul>
+        <li><a href="index.html" style="--navAni:1">Home</a></li>
+        <li><a href="#" class="active" style="--navAni:2">About</a></li>
+        <li><a href="skills.html" style="--navAni:3">Skills</a></li>
+        <li><a href="portfolio.html" style="--navAni:4">Portfolio</a></li>
+        <li><a href="contact.html" style="--navAni:5">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container about-section">
+    <div class="about-image">
+      <img src="myimg.png" alt="Papu Sahu">
+    </div>
+    <div class="about-content">
+      <h1>Hi, I'm <span class="highlight">Papu Sahu</span></h1>
+      <p>I'm a <span class="highlight">frontend web developer</span> who loves transforming ideas into interactive digital experiences. With a strong foundation in HTML, CSS, and JavaScript, I design responsive and accessible websites that work beautifully on every device.</p>
+      <p>I recently completed my <span class="highlight">BCA</span> and am focused on mastering advanced frontend frameworks like <span class="highlight">React</span> and building a strong GitHub portfolio. I'm currently open for internships and freelance projects.</p>
+      <p>Every line of code I write aims to solve a problem and improve user experience.</p>
+
+      <div class="stats">
+        <div class="stat-box">
+          <h2>10+</h2>
+          <span>Projects</span>
+        </div>
+        <div class="stat-box">
+          <h2>2+</h2>
+          <span>Years Learning</span>
+        </div>
+        <div class="stat-box">
+          <h2>100%</h2>
+          <span>Dedication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

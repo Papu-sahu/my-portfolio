@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Papu Sahu</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .contact-title {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .contact-info p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .contact-info .socials {
+      margin-top: 1.5rem;
+    }
+
+    .socials a {
+      color: var(--primary-color);
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: white;
+    }
+
+    form {
+      background: #2a2f3b;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.05);
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      background: #1f252e;
+      color: white;
+    }
+
+    form textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    form button {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background-color: #fff;
+      color: var(--primary-color);
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(50px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <div class="page-header">
+      <div class="logo"><a href="#">Developer</a></div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="mainicon"><div class="menu"><i class='bx bx-menu'></i></div></label>
+      <ul>
+        <li><a href="index.html" style="--navAni:1">Home</a></li>
+        <li><a href="about.html" style="--navAni:2">About</a></li>
+        <li><a href="skills.html" style="--navAni:3">Skills</a></li>
+        <li><a href="portfolio.html" style="--navAni:4">Portfolio</a></li>
+        <li><a href="#" class="active" style="--navAni:5">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="container contact-section">
+    <h1 class="contact-title">Contact Me</h1>
+    <div class="contact-container">
+      
+      <div class="contact-info">
+        <h2>Let's Connect</h2>
+        <p>If you'd like to discuss a project or just say hi, feel free to drop a message!</p>
+        <div class="socials">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+        </div>
+      </div>
+
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </div>
+  </section>
+</body>
+</html>
