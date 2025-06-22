@@ -18,7 +18,7 @@ body {
     height: 100vh;
     color: #ffffff;
 }
-/* Genral */
+
 .container {
     padding: 0 8.4rem;
 }
@@ -27,7 +27,7 @@ body {
     width: 100%;
     height: auto;
 }
-/* Nav */
+
 header {
     background: var(--primary-dark);
     position: relative;
@@ -101,10 +101,6 @@ li a:hover {
     animation: rightSideAni 1.5s ease forwards;
 }
 
-/* Nav End */
-
-/* Section 1 */
-
 .main {
     padding: 6rem 0;
     display: grid;
@@ -150,9 +146,6 @@ li a:hover {
     box-shadow: 0 0 10px #D1D9E6;
 }
 
-/* Section 1 End */
-
-/* Roundin sec */
   .main {
     position: relative;
   }
@@ -227,7 +220,6 @@ li a:hover {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
   }
-  /* keyframe animation */
 
   @keyframes Rotate {
     from {
@@ -265,7 +257,6 @@ li a:hover {
     }
   }
 
-/* Animation */
 @keyframes leftSideAni {
     0% {
         transform: translateX(-100px);
